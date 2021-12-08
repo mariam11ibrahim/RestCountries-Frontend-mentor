@@ -1,0 +1,34 @@
+@mixin flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin small-box-shadow {
+    box-shadow: 0rem 0.5rem 4rem rgba(#000000, 0.15);
+}
+
+@mixin respond($break-point) {
+    //1400px
+    @if $break-point==very-large {
+        @media only screen and (max-width: 87.5em) {
+            @content;
+        }
+    }
+    //1200px
+    @if $break-point==large {
+        @media only screen and (max-width: 75em) {
+            @content;
+        }
+    }
+    //650px
+    @if $break-point==small {
+        @media only screen and (max-width: 37.5em) {
+            @content;
+        }
+    }
+    @if $break-point==very-small {
+        @media only screen and (max-width: 15.62em) {
+            @content;
+        }
+    }
+}

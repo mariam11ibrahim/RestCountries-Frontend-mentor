@@ -1,0 +1,14 @@
+.header {
+    &__mode {
+        display: flex;
+        align-items: center;
+        font-size: $font-size-secondary;
+        cursor: pointer;
+        &-icon {
+            margin-right: 1rem;
+        }
+        &-type {
+            font-weight: $font-weight-medium;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+$color-blue-dark: hsl(209, 23%, 22%);
+$color-blue-very-dark: hsl(207, 26%, 17%);
+$color-blue-extra-dark: hsl(200, 15%, 8%);
+$color-gray-light: hsl(0, 0%, 98%);
+$color-gray-dark: hsl(0, 0%, 52%);
+$color-white: hsl(0, 0%, 100%);
+//
+$font-size-primary: 1.6rem;
+$font-size-secondary: 1.4rem;
+//
+$font-weight-light: 300;
+$font-weight-medium: 600;
+$font-weight-bold: 800;
+//light mode
+.dark {
+    --color-primary: #{$color-blue-very-dark};
+    --color-secondary: #{$color-blue-dark};
+    --color-tertiary: #{$color-gray-light};
+    --color-text: #{$color-white};
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    color: currentColor;
+}
+
+html {
+    // light mode
+    --color-primary: #{$color-gray-light};
+    --color-secondary: #{$color-white};
+    --color-tertiary: #{$color-gray-dark};
+    --color-text: #{$color-blue-extra-dark};
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem =10px
+    @include respond(large) {
+        font-size: 60%;
+    }
+    @include respond(small) {
+        font-size: 50%;
+    }
+    @include respond(very-small) {
+        font-size: 43.75%;
+    }
+}
+
+body {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 200;
+    &>*:not(:first-child) {
+        padding: 1.5rem 6rem;
+        @include respond(small) {
+            padding: 1rem;
+        }
+    }
+}

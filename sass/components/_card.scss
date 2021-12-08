@@ -1,0 +1,59 @@
+.card {
+    width: 26rem;
+    height: 32rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--color-secondary);
+    @include small-box-shadow;
+    margin: 4rem 2rem;
+    box-sizing: content-box;
+    position: relative;
+    transition: transform 0.2s;
+    &:hover {
+        transform: scale(0.95);
+    }
+    &__img {
+        box-sizing: content-box;
+        height: 50%;
+        width: 100%;
+        overflow: hidden;
+    }
+    &__flag {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+    &__details {
+        align-self: flex-start;
+        padding: 1.8rem 0 4rem 0;
+        margin-left: 3rem;
+        font-size: $font-size-secondary;
+    }
+    &__country-name {
+        margin: 1rem 0;
+        font-size: $font-size-primary;
+    }
+    &__list-item {
+        list-style: none;
+        text-align: start;
+        line-height: 1.6rem;
+        padding: 0.3rem 0;
+    }
+    &__country-title {
+        font-weight: $font-weight-medium;
+    }
+    &__country-data {
+        font-weight: $font-weight-light !important;
+    }
+    &__link:visited,
+    &__link:link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+}

@@ -1,0 +1,135 @@
+.country {
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem;
+    @include respond(large) {
+        flex-direction: column;
+    }
+    @include respond(small) {
+        padding: 0.5rem;
+        align-items: center;
+    }
+    &__flag {
+        width: 50rem;
+        height: 35rem;
+        border-radius: 0.5rem;
+        overflow: hidden !important;
+        @include small-box-shadow;
+        margin: 0rem 10rem 1rem 1rem;
+        @include respond(very-large) {
+            width: 40rem;
+            height: 25rem;
+        }
+        @include respond(large) {
+            margin: 0rem 0rem 5rem 0rem;
+            align-self: center;
+        }
+        @include respond(small) {
+            width: 35rem;
+        }
+        @include respond(very-small) {
+            width: 25rem;
+            height: 15rem;
+        }
+    }
+    &__flag-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        top: 0;
+    }
+    &__details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    &__name {
+        font-size: 1.8rem;
+        @include respond(large) {
+            margin-bottom: 1rem;
+        }
+    }
+    &__data {
+        font-size: $font-size-secondary;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10rem;
+        @include respond(very-large) {
+            padding-right: 5rem;
+        }
+        @include respond(large) {
+            padding-right: 0rem;
+            flex-wrap: wrap;
+        }
+        @include respond(small) {
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+    }
+    &__data-list {
+        width: max-content;
+    }
+    &__data-list-item {
+        list-style: none;
+        line-height: 2;
+    }
+    &__borders {
+        font-size: $font-size-secondary;
+        display: flex;
+        align-items: baseline;
+        // flex-wrap: wrap;
+        @include respond(small) {
+            flex-direction: column;
+            width: 35rem;
+        }
+        @include respond(very-small) {
+            flex-direction: column;
+            width: 25rem;
+        }
+        .borders {
+            &__heading {
+                margin: 1rem 1rem 1rem 0;
+            }
+            &__chips {
+                margin-top: 1rem;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            &__chip {
+                margin: 0 1rem 0.5rem 0;
+                padding: 0.5rem 4rem;
+                &--disabled {
+                    cursor: no-drop;
+                    color: var(--color-tertiary) !important;
+                }
+            }
+        }
+    }
+}
+
+.btn {
+    background-color: var(--color-secondary);
+    font-size: $font-size-secondary;
+    color: currentColor;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    margin-left: 1rem;
+    box-shadow: 0rem 0.5rem 1rem rgba(#000, .15);
+    cursor: pointer;
+}
+
+.nav {
+    margin: 2rem 0;
+    font-size: $font-size-secondary;
+    color: currentColor;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    transition: all 0.1s;
+    &:hover {
+        transform: translateY(1px);
+    }
+}

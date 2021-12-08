@@ -1,0 +1,16 @@
+{
+    "name": "contries-info",
+    "version": "1.0.0",
+    "description": "![Design preview for the REST Countries API with color theme switcher coding challenge](./design/desktop-preview.jpg)",
+    "scripts": {
+        "start": "parcel index.html country.html",
+        "build": "parcel build index.html country.html --dist-dir ./dist "
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+
+        "parcel": "^2.0.1"
+    },
+    "dependencies": {}
+}

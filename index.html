@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Where in the world?</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <script defer src="script.js"></script> -->
+    <script defer type="module" src="js/controllers/allCountriesController.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Where in the world?</h1>
+        <div class="header__mode">
+            <i class="far fa-moon header__mode-icon"></i>
+            <span class="header__mode-type">Light Mode</span>
+        </div>
+    </header>
+
+
+    <!-- TEST: -->
+    <main>
+        <section class="find">
+            <form class="find__search">
+                <button type="submit">
+            <i class="fas fa-search find__search-icon"></i>
+          </button>
+                <input type="text" placeholder="Search for a country..." class="find__search-input" />
+            </form>
+            <div class="find__dropdown">
+                <div class="dropdown__custom-input">
+                    <span class="dropdown__title">Filter by Region</span>
+                    <i class="fas fa-chevron-down dropdown__icon"> </i>
+                </div>
+
+                <ul class="dropdown__list">
+                    <li class="dropdown__list-item">
+                        <label class="dropdown__label" for="Africa">Africa</label>
+                        <input class="dropdown__value" type="radio" name="region" id="Africa" title="Africa" />
+                    </li>
+                    <li class="dropdown__list-item">
+                        <label class="dropdown__label" for="America">America</label>
+                        <input class="dropdown__value" type="radio" name="region" id="America" title="America" />
+                    </li>
+                    <li class="dropdown__list-item">
+                        <label class="dropdown__label" for="Asia">Asia</label>
+                        <input class="dropdown__value" type="radio" name="region" id="Asia" title="Asia" />
+                    </li>
+                    <li class="dropdown__list-item">
+                        <label class="dropdown__label" for="Europe">Europe</label>
+                        <input class="dropdown__value" type="radio" name="region" id="Europe" title="Europe" />
+                    </li>
+                    <li class="dropdown__list-item">
+                        <label class="dropdown__label" for="Oceania">Oceania</label>
+                        <input class="dropdown__value" type="radio" name="region" id="Oceania" title="Oceania" />
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="countries-container">
+            <!--  
+                  <div class="card">
+
+          <div class="card__img">
+            <img
+              src='https://flagcdn.com/bi.svg'
+              alt="Afghanistan flag"
+              class="card__flag"
+            />
+          </div>
+
+          <div class="card__details">
+
+           <h3 class="card__country-name">Afghanistan</h3>
+
+            <ul class="card__list">
+              <li class="card__list-item">
+                <span class="card__country-title">Population:</span>
+                <span class="card__country-data">2837743</span>
+              </li>
+              <li class="card__list-item">
+                <span class="card__country-title">Region:<span>
+                <span class="card__country-data"> Africa</span>         
+              </li>
+              <li class="card__list-item">
+                <span class="card__country-title">Capital:</span>
+                <span class="card__country-data">Kabul</span>    
+              </li>
+            </ul>
+          </div>
+        </div>
+
+          -->
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.error {
+    background-color: indianred;
+    border: 1px dashed rgba(#d00404, 0.2);
+    @include small-box-shadow;
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    // padding: 1rem 5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translate(-50%, -50%) scaleY(1);
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+    &__message {
+        display: inline-block;
+        color: $color-white;
+        font-weight: $font-weight-medium;
+    }
+    &__icon {
+        color: $color-white;
+        margin-right: 1rem;
+        font-size: 2.5rem;
+    }
+    &__hide {
+        transform: scaleY(0);
+    }
+}
