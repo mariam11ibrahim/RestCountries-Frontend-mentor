@@ -128,7 +128,8 @@ body {
   position: relative; }
   .find__search [type="submit"] {
     border: none;
-    cursor: pointer; }
+    cursor: pointer;
+background-color:transparent;}
   @media only screen and (max-width: 37.5em) {
     .find__search {
       width: 100%; } }
