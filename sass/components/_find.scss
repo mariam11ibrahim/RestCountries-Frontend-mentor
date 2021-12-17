@@ -29,6 +29,7 @@
         [type="submit"] {
             border: none;
             cursor: pointer;
+            background-color: transparent;
         }
         @include respond(small) {
             width: 100%;
