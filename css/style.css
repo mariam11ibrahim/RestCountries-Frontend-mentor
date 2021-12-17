@@ -136,7 +136,7 @@ background-color:transparent;}
 
 .find__search-icon {
   position: absolute;
-  top: 2rem;
+  top: 1.8rem;
   left: 2.2rem;
   color: var(--color-tertiary); }
   @media only screen and (max-width: 37.5em) {
