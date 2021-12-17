@@ -51,7 +51,7 @@ class AllCountriesView extends View {
                </li>
              </ul>
            </div>
-           <a href="country.html" class="card__link"></a>
+           <a href="country.html" class="card__link"> &nbsp;</a>
          </div>`;
     }
 
